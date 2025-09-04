@@ -1,0 +1,49 @@
+% Initialize initial positions and time
+x = 0;
+y = 0;
+time = 0; % Initialize time
+
+choose_num = 300; % Choosing how many trajectories to consider
+fps = 1;
+x_threshold = 30; % Threshold for change in x-values
+
+id = unique(res(:, 8));
+l = length(id);
+x_range = zeros(l, 2); % Range of trajs
+
+for i = 1:l
+    idx = res(:, 8) == id(i);
+    x_range(i, :) = [min(res(idx, 1)), max(res(idx, 1))];
+end
+
+dx = x_range(:, 2) - x_range(:, 1);
+[~, id_long] = sort(dx, 'descend');
+
+figure()
+hold on
+
+res_choose = [];
+time_values = []; % Initialize arrays to store time and x values
+x_values = [];
+
+for i = 1:choose_num
+    idx = res(:, 8) == id(id_long(i));
+    res_choose = [res_choose; res(idx, :)];
+    
+    % Store time and x values in arrays
+    time_values = [time_values; res(idx, 7)];
+    x_values = [x_values; res(idx, 1)];
+    
+    % Check if x-values go up from 0 to 700 and change in x is greater than the threshold
+    if i > 1 && max(x_values) > 100 && abs(x_values(end) - x_values(end-1)) > x_threshold
+        % Break out of the loop
+        break;
+        
+    end
+    
+    % Plot the particle
+    plot(res(idx, 7), 1000-res(idx, 1), 'o', 'MarkerSize', 5, 'Linewidth', 2, 'DisplayName', num2str(id(id_long(i))))
+    
+    xlabel('Time of Frame (s)', 'FontSize', 33, 'FontWeight', 'bold', 'Color', 'k');
+    ylabel('Nanoculture Position (\mum)', 'FontSize', 33, 'FontWeight', 'bold', 'Color', 'k');
+end
