@@ -33,7 +33,16 @@ This platform enables:
 ## Requirements
 - MATLAB R2021a or later  
 - Image Processing Toolbox  
-- Curve Fitting Toolbox (for some velocity fitting functions)  
+- Curve Fitting Toolbox (for some velocity fitting functions)
+  
+## Citation
+
+If you use this repository, please cite:
+
+Huda Usman, Mehdi Molaei, Tagbo H.R. Niepa.  
+Magnetic Nanocultures (Version 1.0) [Computer software]. Zenodo.
+https://doi.org/10.5281/zenodo.17058825
+
 
 ## Usage
 Clone the repo:
