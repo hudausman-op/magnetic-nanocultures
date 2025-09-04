@@ -1,6 +1,18 @@
 # magnetic-nanocultures
 MATLAB scripts and data analysis workflows for characterizing microbial growth, motion, and magnetic responsiveness in PDMS-based magnetic nanocultures. 
-Developed as part of my PhD dissertation and manuscript on magnetically responsive microbial nanocultures.
+Developed as part of the manuscript: Magnetically Responsive Nanocultures for Direct Microbial Assessment in Soil Environments.
+
+## Authors
+
+**Huda Usman**  
+Department of Chemical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA  
+
+**Mehdi Molaei**  
+Department of Chemical and Biomolecular Engineering, University of Pennsylvania, Philadelphia, PA, USA  
+
+**Tagbo H. R. Niepa**  
+Department of Chemical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA
+
 
 ## Overview
 Magnetic nanocultures are double-emulsion microcapsules with **functionalized PDMS membranes** embedded with magnetic nanoparticles (MNPs).  
