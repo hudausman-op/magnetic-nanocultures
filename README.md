@@ -2,8 +2,7 @@
 
 
 MATLAB scripts and data analysis workflows for characterizing microbial growth, motion, and magnetic responsiveness in PDMS-based magnetic nanocultures. 
-Developed as part of the manuscript by Usman at el. 2025. Magnetically Responsive Nanocultures for Direct Microbial Assessment in Soil Environments. 
-doi: https://doi.org/10.1101/2025.05.17.654660
+Developed as part of the manuscript: Magnetically Responsive Nanocultures for Direct Microbial Assessment in Soil Environments. Usman at el. 2025. doi: https://doi.org/10.1101/2025.05.17.654660
 
 ## Authors
 
