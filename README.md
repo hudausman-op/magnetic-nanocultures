@@ -1,5 +1,21 @@
 # magnetic-nanocultures
 
+
+MATLAB scripts and data analysis workflows for characterizing microbial growth, motion, and magnetic responsiveness in PDMS-based magnetic nanocultures. 
+Developed as part of the manuscript: Magnetically Responsive Nanocultures for Direct Microbial Assessment in Soil Environments. Usman at el. 2025. doi: https://doi.org/10.1101/2025.05.17.654660
+
+## Authors
+
+**Huda Usman**  
+Department of Chemical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA  
+
+**Mehdi Molaei**  
+Department of Chemical and Biomolecular Engineering, University of Pennsylvania, Philadelphia, PA, USA  
+
+**Tagbo H. R. Niepa**  
+Department of Chemical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA
+
+
 ## Overview
 Magnetic nanocultures are double-emulsion microcapsules with **functionalized PDMS membranes** embedded with magnetic nanoparticles (MNPs).  
 This platform enables:
@@ -17,7 +33,16 @@ This platform enables:
 ## Requirements
 - MATLAB R2021a or later  
 - Image Processing Toolbox  
-- Curve Fitting Toolbox (for some velocity fitting functions)  
+- Curve Fitting Toolbox (for some velocity fitting functions)
+  
+## Citation
+
+If you use this repository, please cite:
+
+Huda Usman, Mehdi Molaei, Tagbo H.R. Niepa.  
+Magnetic Nanocultures (Version 1.0) [Computer software]. Zenodo.
+https://doi.org/10.5281/zenodo.17058825
+
 
 ## Usage
 Clone the repo:
